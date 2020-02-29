@@ -17,7 +17,7 @@ class FullyConnectedNetwork(torch.nn.Module):
             )
 
     def forward(self, x):       
-        # Convert the 2x2 input data (image) into a vector
+        # Convert the 2-dimentional input data (image) into a 1-dimentional tensor
         out = x.reshape(x.size(0), -1)
 
         # Apply the layers created at initialization time in order
